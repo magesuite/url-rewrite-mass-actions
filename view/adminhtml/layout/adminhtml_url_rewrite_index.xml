@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="adminhtml.block.url_rewrite.grid">
+            <block class="Magento\Backend\Block\Widget\Grid\Massaction" name="adminhtml.url_rewrite.grid.columnSet.massaction" as="grid.massaction">
+                <arguments>
+                    <argument name="massaction_id_field" xsi:type="string">url_rewrite_id</argument>
+                    <argument name="form_field_name" xsi:type="string">url_rewrite_ids</argument>
+                    <argument name="use_select_all" xsi:type="string">1</argument>
+                    <argument name="options" xsi:type="array">
+                        <item name="export" xsi:type="array">
+                            <item name="label" xsi:type="string" translate="true">Delete</item>
+                            <item name="url" xsi:type="string">url_rewrite_mass_actions/rewrite/delete</item>
+                            <item name="confirm" xsi:type="string" translate="true">Are you sure?</item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
