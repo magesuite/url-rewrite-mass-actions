@@ -27,7 +27,7 @@ class Delete extends \Magento\Backend\App\Action
 
         if(!is_array($urlRewriteIds) or empty($urlRewriteIds)) {
             $this->messageManager->addError(__('No url rewrite ids were passed'));
-            
+
             return $this->_redirect($this->_redirect->getRefererUrl());
         }
 
